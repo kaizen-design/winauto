@@ -1,3 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
-  console.log("Loaded Scripts");
+  //  Prevent jump to top on "#" links
+  document.querySelectorAll("a[href='#']").forEach(link => {
+    link.addEventListener("click", e => e.preventDefault());
+  });
 });

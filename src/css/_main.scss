@@ -1,184 +1,36 @@
-//All styles can be added here.
-.hero-heading {
-  @apply mb-10 text-4xl font-medium text-white;
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;600;700;800&family=Inter:wght@400;700&display=swap');
+
+.container {
+  @apply w-full max-w-7xl px-4 md:px-6 mx-auto;
 }
 
-.instructions {
-  .sub-title {
-    @apply mb-5 border-b-2 border-gray-400 pb-2 text-xl font-medium text-gray-900;
+.header-btn {
+  @apply bg-primary text-white font-extrabold text-xs lg:text-[13px] uppercase italic px-4 py-2 lg:px-5 lg:py-3 font-inter h-fit hover:bg-secondary;
+}
 
-    & + p {
-      @apply mb-3;
-    }
-  }
-  .code {
-    @apply block w-full rounded border bg-gray-100 px-4 py-5 font-mono text-sm leading-normal text-gray-700 shadow;
-
-    &.pre {
-      @apply whitespace-pre-wrap;
-    }
-
-    em {
-      @apply opacity-75;
-    }
+.menu-link {
+  @apply uppercase font-extrabold italic text-black text-[15px] font-inter px-4 border-b-[5px] border-transparent pb-3 flex hover:text-primary;
+  &.active {
+    @apply border-primary cursor-default hover:text-black;
   }
 }
 
-.social {
-  @apply block pt-6 text-gray-700;
-
-  a {
-    @apply p-4 font-medium text-blue-500;
-
-    &:hover {
-      @apply text-blue-700;
-    }
-  }
+.splash {
+  @apply flex flex-col w-full justify-end md:justify-center relative h-[358px] md:h-[542px] lg:h-[682px] before:content-[''] before:inset-0 before:z-[1] before:bg-black/50 before:absolute;
 }
 
-// highlights
-
-pre[class*="language-"] {
-  color: #f8fafc;
-  @apply max-w-2xl;
+.unordered-list {
+  @apply flex flex-col gap-1 list-inside list-square marker:text-primary marker:mr-1 text-sm lg:text-base;
 }
 
-.token.class-name,
-.token.function,
-.token.selector,
-.token.selector .class,
-.token.selector.class,
-.token.module,
-.token.tag {
-  color: #f472b6;
+.btn-primary {
+  @apply text-sm font-semibold text-white bg-primary-800 px-5 py-2 rounded-full self-start flex gap-2.5 items-center hover:bg-secondary;
 }
 
-.token.attr-name,
-.token.important,
-.token.keyword,
-.token.pseudo-class,
-.token.rule {
-  color: #cbd5e1;
+.services-grid {
+  @apply grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-2 px-2 mb-2 mt-6;
 }
 
-.token.attr-value,
-.token.class,
-.token.property,
-.token.string {
-  color: #7dd3fc;
-}
-
-.token.attr-equals,
-.token.punctuation {
-  color: #64748b;
-}
-
-.token.combinator,
-.token.comment,
-.token.operator {
-  color: #94a3b8;
-}
-
-.language-css .token.function,
-.token.unit {
-  color: #99f6e4;
-}
-
-code[class*="language-"],
-pre[class*="language-"] {
-  word-wrap: normal;
-  -webkit-hyphens: none;
-  hyphens: none;
-  -moz-tab-size: 4;
-  -o-tab-size: 4;
-  tab-size: 4;
-  text-align: left;
-  white-space: pre;
-  word-break: normal;
-  word-spacing: normal;
-}
-
-code[class*="language-"] ::-moz-selection,
-code[class*="language-"]::-moz-selection,
-pre[class*="language-"] ::-moz-selection,
-pre[class*="language-"]::-moz-selection {
-  background: rgba(29, 59, 83, 0.99);
-  text-shadow: none;
-}
-
-code[class*="language-"] ::selection,
-code[class*="language-"]::selection,
-pre[class*="language-"] ::selection,
-pre[class*="language-"]::selection {
-  background: rgba(29, 59, 83, 0.99);
-  text-shadow: none;
-}
-
-.token.cdata,
-.token.comment,
-.token.prolog {
-  color: #94a3b8;
-  font-style: italic;
-}
-
-.token.punctuation {
-  color: #c792ea;
-}
-
-.token.deleted {
-  color: rgba(239, 83, 80, 0.56);
-  font-style: italic;
-}
-
-.token.keyword,
-.token.operator,
-.token.tag {
-  color: #f472b6;
-}
-
-.token.boolean {
-  color: #ff5874;
-}
-
-.token.number {
-  color: #f78c6c;
-}
-
-.token.builtin,
-.token.char,
-.token.constant,
-.token.function {
-  color: #f472b6;
-}
-
-.token.doctype,
-.token.selector {
-  color: #c792ea;
-  font-style: italic;
-}
-
-.token.attr-name,
-.token.inserted {
-  color: #addb67;
-  font-style: italic;
-}
-
-.language-css .token.string,
-.style .token.string,
-.token.entity,
-.token.string,
-.token.url {
-  color: #7dd3fc;
-}
-
-.token.atrule,
-.token.attr-value,
-.token.class-name {
-  color: #ffcb8b;
-}
-
-.token.important,
-.token.regex,
-.token.variable {
-  color: #d6deeb;
+.services-grid-item {
+  @apply px-6 pl-32 md:pl-40 border-primary-700 border min-h-[166px] sm:min-h-[240px] flex items-center gap-3 md:gap-10 overflow-hidden hover:bg-primary-800 hover:text-white;
 }
