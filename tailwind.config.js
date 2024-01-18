@@ -34,11 +34,16 @@ module.exports = {
           900: '#173958'
         },
         gray: {
-          500: '#909090'
+          500: '#909090',
+          600: '#666'
         },
         black: {
           DEFAULT: '#000',
           900: '#272727'
+        },
+        white: {
+          DEFAULT: '#FFF',
+          100: '#F7F9FA'
         }
       },
       fontFamily: {
