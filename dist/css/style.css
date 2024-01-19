@@ -619,6 +619,9 @@ html {
 .z-0{
   z-index: 0;
 }
+.z-10{
+  z-index: 10;
+}
 .z-\[1\]{
   z-index: 1;
 }
@@ -627,12 +630,6 @@ html {
 }
 .z-\[99\]{
   z-index: 99;
-}
-.z-\[10\]{
-  z-index: 10;
-}
-.z-10{
-  z-index: 10;
 }
 .order-last{
   order: 9999;
@@ -1091,6 +1088,11 @@ html {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+.transition-colors{
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .container{
   margin-left: auto;
   margin-right: auto;
@@ -1123,6 +1125,9 @@ html {
   font-style: italic;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .header-btn:hover{
@@ -1154,6 +1159,9 @@ html {
   font-style: italic;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .menu-link:hover{
@@ -1179,6 +1187,9 @@ html {
   font-style: italic;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .mobile-menu-link:hover{
@@ -1261,6 +1272,9 @@ html {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .btn-primary:hover{
@@ -1301,6 +1315,9 @@ html {
   border-color: rgb(227 55 55 / var(--tw-border-opacity));
   padding-right: 1.5rem;
   padding-left: 8rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .services-grid-item:hover{
@@ -1435,6 +1452,9 @@ html {
   text-transform: uppercase;
   font-style: italic;
   line-height: 1.375;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .footer-link:hover{

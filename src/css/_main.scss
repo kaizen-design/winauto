@@ -5,18 +5,18 @@
 }
 
 .header-btn {
-  @apply bg-primary text-white font-extrabold text-xs lg:text-[13px] uppercase italic px-4 py-2 lg:px-5 lg:py-3 font-inter h-fit hover:bg-secondary;
+  @apply bg-primary text-white font-extrabold text-xs lg:text-[13px] uppercase italic px-4 py-2 lg:px-5 lg:py-3 font-inter h-fit hover:bg-secondary transition-colors;
 }
 
 .menu-link {
-  @apply uppercase font-extrabold italic text-black text-[15px] font-inter px-4 border-b-[5px] border-transparent pb-3 flex hover:text-primary;
+  @apply uppercase font-extrabold italic text-black text-[15px] font-inter px-4 border-b-[5px] border-transparent pb-3 flex hover:text-primary transition-colors;
   &.active {
     @apply border-primary cursor-default hover:text-black;
   }
 }
 
 .mobile-menu-link {
-  @apply uppercase font-extrabold italic text-black text-[15px] font-inter flex hover:text-primary;
+  @apply uppercase font-extrabold italic text-black text-[15px] font-inter flex hover:text-primary transition-colors;
 }
 
 .splash {
@@ -28,7 +28,7 @@
 }
 
 .btn-primary {
-  @apply text-sm font-semibold text-white bg-primary-800 px-5 py-2 rounded-full self-start flex gap-2.5 items-center hover:bg-secondary;
+  @apply text-sm font-semibold text-white bg-primary-800 px-5 py-2 rounded-full self-start flex gap-2.5 items-center hover:bg-secondary transition-colors;
 }
 
 .services-grid {
@@ -36,7 +36,7 @@
 }
 
 .services-grid-item {
-  @apply px-6 pl-32 md:pl-40 border-primary-700 border min-h-[166px] sm:min-h-[240px] flex items-center gap-3 md:gap-10 overflow-hidden hover:bg-primary-800 hover:text-white;
+  @apply px-6 pl-32 md:pl-40 border-primary-700 border min-h-[166px] sm:min-h-[240px] flex items-center gap-3 md:gap-10 overflow-hidden hover:bg-primary-800 hover:text-white transition-colors;
 }
 
 .h2 {
@@ -52,5 +52,5 @@
 }
 
 .footer-link {
-  @apply font-inter text-sm lg:text-[15px] font-extrabold uppercase italic hover:text-primary-600 hover:border-b hover:border-primary-600 leading-snug;
+  @apply font-inter text-sm lg:text-[15px] font-extrabold uppercase italic hover:text-primary-600 hover:border-b hover:border-primary-600 leading-snug transition-colors;
 }
