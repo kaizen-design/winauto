@@ -10,20 +10,22 @@
   <body class="min-w-[320px] overflow-x-hidden pt-[116px] md:pt-0">
     <!-- HEADER -->
     <header class="fixed top-0 left-0 right-0 z-[99] md:static shadow-md">
-      <div class="md:hidden bg-primary py-3">
+      <div class="md:hidden bg-primary py-3 relative z-10">
         <div class="container flex items-center justify-center gap-3">
           <img src="img/icons/smartphone.svg" alt="Phone" />
           <a href="tel:88004564545" class="text-white font-bold text-lg border-b border-b-white border-dotted leading-tight font-inter line-clamp-1">8 800 456 45 45</a>
         </div>
       </div>
-      <div class="bg-white">
+      <div class="bg-white relative z-10">
         <div class="container flex items-center justify-center py-6 md:py-8 relative md:justify-between">
-          <a href="#" class="w-[21px] h-[21px] flex items-center justify-center absolute left-4 md:hidden">
-            <img src="img/icons/menu.svg" alt="Menu" />
-          </a>
-          <a href="/">
-            <img src="img/logo.svg" alt="Winauto" class="max-w-[193px] md:max-w-none" />
-          </a>
+          <div class="">
+            <a id="mobileMenuToggle" href="#" class="w-[21px] h-[21px] flex items-center justify-center absolute left-4 md:hidden">
+              <img src="img/icons/menu.svg" alt="Menu" />
+            </a>
+            <a href="/">
+              <img src="img/logo.svg" alt="Winauto" class="max-w-[193px] md:max-w-none" />
+            </a>
+          </div>
           <div class="gap-6 hidden md:flex items-center">
             <div class="flex-col hidden min-[1180px]:flex">
               <span class="text-xs text-gray-500 hidden lg:block">Адрес центра:</span>
@@ -56,6 +58,15 @@
           </div>
         </nav>
       </div>
+      <!-- MOBILE NAV -->
+      <nav id="mobileNav" class="md:hidden -translate-y-full relative z-[1] transition-all">
+        <ul class="bg-white flex flex-col items-center gap-10 py-10 px-4 border-t border-gray-400">
+          <li><a href="#" class="mobile-menu-link">О центре</a></li>
+          <li><a href="#" class="mobile-menu-link">Услуги</a></li>
+          <li><a href="#" class="mobile-menu-link">Клиенты</a></li>
+          <li><a href="#" class="mobile-menu-link">Контакты</a></li>
+        </ul> 
+      </nav>  
     </header>
 
     <!-- SPLASH -->

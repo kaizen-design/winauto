@@ -15,6 +15,10 @@
   }
 }
 
+.mobile-menu-link {
+  @apply uppercase font-extrabold italic text-black text-[15px] font-inter flex hover:text-primary;
+}
+
 .splash {
   @apply flex flex-col w-full justify-end md:justify-center relative h-[358px] md:h-[542px] lg:h-[682px] before:content-[''] before:inset-0 before:z-[1] before:bg-black/50 before:absolute;
 }
