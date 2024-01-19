@@ -42,3 +42,7 @@
 .review-card {
   @apply bg-white-100 p-4 md:p-6 flex flex-col gap-6 md:gap-9 relative z-[2] before:content-[''] before:w-[68px] before:h-[68px] before:absolute before:top-0 before:left-0 before:z-[1] before:border-t before:border-l before:border-primary-700 after:content-[''] after:w-[68px] after:h-[68px] after:absolute after:bottom-0 after:right-0 after:z-[1] after:border-b after:border-r after:border-primary-700;
 }
+
+.contact-section {
+  @apply bg-gradient-to-br from-[#E2EDFF] to-white min-h-[707px] lg:min-h-[797px] before:content-[''] relative before:absolute before:inset-0 z-0 before:bg-[url('/img/contact-bg-m.png')] before:bg-cover before:bg-bottom sm:before:bg-[url('/img/contact-bg-t.png')] lg:before:bg-[url('/img/contact-bg-d.png')] lg:flex lg:flex-col lg:justify-center;
+}

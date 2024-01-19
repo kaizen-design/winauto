@@ -589,9 +589,6 @@ html {
 .relative{
   position: relative;
 }
-.\!relative{
-  position: relative !important;
-}
 .inset-0{
   inset: 0px;
 }
@@ -616,6 +613,9 @@ html {
 .z-0{
   z-index: 0;
 }
+.z-\[1\]{
+  z-index: 1;
+}
 .z-\[2\]{
   z-index: 2;
 }
@@ -628,11 +628,11 @@ html {
 .mb-6{
   margin-bottom: 1.5rem;
 }
+.mt-1{
+  margin-top: 0.25rem;
+}
 .mt-3{
   margin-top: 0.75rem;
-}
-.mt-6{
-  margin-top: 1.5rem;
 }
 .mt-7{
   margin-top: 1.75rem;
@@ -642,12 +642,6 @@ html {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
-}
-.line-clamp-6{
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 6;
 }
 .line-clamp-\[7\]{
   overflow: hidden;
@@ -664,6 +658,12 @@ html {
 .hidden{
   display: none;
 }
+.\!h-\[60px\]{
+  height: 60px !important;
+}
+.\!h-auto{
+  height: auto !important;
+}
 .h-\[21px\]{
   height: 21px;
 }
@@ -676,23 +676,17 @@ html {
 .h-full{
   height: 100%;
 }
-.h-\[\]{
-  height: ;
-}
-.h-\[60px\]{
-  height: 60px;
-}
-.\!h-\[60px\]{
-  height: 60px !important;
-}
-.h-auto{
-  height: auto;
-}
-.\!h-auto{
-  height: auto !important;
-}
 .min-h-\[100px\]{
   min-height: 100px;
+}
+.min-h-\[707px\]{
+  min-height: 707px;
+}
+.\!w-\[60px\]{
+  width: 60px !important;
+}
+.\!w-auto{
+  width: auto !important;
 }
 .w-\[21px\]{
   width: 21px;
@@ -702,21 +696,6 @@ html {
 }
 .w-full{
   width: 100%;
-}
-.w-\[\]{
-  width: ;
-}
-.w-\[60px\]{
-  width: 60px;
-}
-.\!w-\[60px\]{
-  width: 60px !important;
-}
-.w-auto{
-  width: auto;
-}
-.\!w-auto{
-  width: auto !important;
 }
 .min-w-\[320px\]{
   min-width: 320px;
@@ -740,14 +719,20 @@ html {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
-.transform{
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 .flex-row{
   flex-direction: row;
 }
 .flex-col{
   flex-direction: column;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+.items-start{
+  align-items: flex-start;
 }
 .items-center{
   align-items: center;
@@ -815,16 +800,16 @@ html {
 .border-dotted{
   border-style: dotted;
 }
+.border-black{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-transparent{
   border-color: transparent;
 }
 .border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
-}
-.border-black{
-  --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 .border-b-white{
   --tw-border-opacity: 1;
@@ -850,12 +835,26 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-gradient-to-br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+.from-\[\#E2EDFF\]{
+  --tw-gradient-from: #E2EDFF var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(226 237 255 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-to-position:  ;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
 .from-secondary{
   --tw-gradient-from: #1E4365 var(--tw-gradient-from-position);
   --tw-gradient-from-position:  ;
   --tw-gradient-to: rgb(30 67 101 / 0)  var(--tw-gradient-from-position);
   --tw-gradient-to-position:  ;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+.to-white{
+  --tw-gradient-to: #FFF var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
 }
 .fill-secondary-300{
   fill: #90B8DD;
@@ -873,9 +872,21 @@ html {
 .p-5{
   padding: 1.25rem;
 }
+.px-3{
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
 .px-6{
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+.px-8{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 .py-3{
   padding-top: 0.75rem;
@@ -889,16 +900,11 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-8{
-  padding-left: 2rem;
-  padding-right: 2rem;
-}
 .pl-2{
   padding-left: 0.5rem;
+}
+.pt-4{
+  padding-top: 1rem;
 }
 .text-center{
   text-align: center;
@@ -964,14 +970,14 @@ html {
 .leading-none{
   line-height: 1;
 }
+.leading-normal{
+  line-height: 1.5;
+}
 .leading-relaxed{
   line-height: 1.625;
 }
 .leading-tight{
   line-height: 1.25;
-}
-.leading-normal{
-  line-height: 1.5;
 }
 .tracking-\[4\.52px\]{
   letter-spacing: 4.52px;
@@ -1284,6 +1290,49 @@ html {
   }
 }
 
+.contact-section{
+  position: relative;
+  z-index: 0;
+  min-height: 707px;
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  --tw-gradient-from: #E2EDFF var(--tw-gradient-from-position);
+  --tw-gradient-from-position:  ;
+  --tw-gradient-to: rgb(226 237 255 / 0)  var(--tw-gradient-from-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #FFF var(--tw-gradient-to-position);
+  --tw-gradient-to-position:  ;
+}
+
+.contact-section::before{
+  position: absolute;
+  inset: 0px;
+  background-image: url("/img/contact-bg-m.png");
+  background-size: cover;
+  background-position: bottom;
+  --tw-content: "";
+  content: var(--tw-content);
+}
+
+@media (min-width: 640px){
+  .contact-section::before{
+    content: var(--tw-content);
+    background-image: url("/img/contact-bg-t.png");
+  }
+}
+
+@media (min-width: 1024px){
+  .contact-section{
+    display: flex;
+    min-height: 797px;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .contact-section::before{
+    content: var(--tw-content);
+    background-image: url("/img/contact-bg-d.png");
+  }
+}
+
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
@@ -1299,22 +1348,27 @@ html {
   top: 66px;
 }
 
+.before\:bg-\[url\(\'\/img\/contact-bg-m\.png\'\)\]::before{
+  content: var(--tw-content);
+  background-image: url('/img/contact-bg-m.png');
+}
+
 .before\:bg-gradient-to-t::before{
   content: var(--tw-content);
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
 
+.before\:bg-cover::before{
+  content: var(--tw-content);
+  background-size: cover;
+}
+
+.before\:bg-bottom::before{
+  content: var(--tw-content);
+  background-position: bottom;
+}
+
 .before\:content-\[\'\'\]::before{
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.after\:content-\[\]::after{
-  --tw-content: ;
-  content: var(--tw-content);
-}
-
-.after\:content-\[\'\'\]::after{
   --tw-content: '';
   content: var(--tw-content);
 }
@@ -1324,28 +1378,9 @@ html {
   content: var(--tw-content) !important;
 }
 
-.hover\:border:hover{
-  border-width: 1px;
-}
-
 .hover\:border-primary-700:hover{
   --tw-border-opacity: 1;
   border-color: rgb(227 55 55 / var(--tw-border-opacity));
-}
-
-.hover\:border-secondary:hover{
-  --tw-border-opacity: 1;
-  border-color: rgb(30 67 101 / var(--tw-border-opacity));
-}
-
-.hover\:bg-white:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-primary-700:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(227 55 55 / var(--tw-bg-opacity));
 }
 
 .hover\:\!bg-primary-700:hover{
@@ -1353,9 +1388,9 @@ html {
   background-color: rgb(227 55 55 / var(--tw-bg-opacity)) !important;
 }
 
-.hover\:bg-secondary:hover{
+.hover\:bg-white:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(30 67 101 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-primary:hover{
@@ -1371,11 +1406,6 @@ html {
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.hover\:text-primary-700:hover{
-  --tw-text-opacity: 1;
-  color: rgb(227 55 55 / var(--tw-text-opacity));
 }
 
 .group:hover .group-hover\:border{
@@ -1396,6 +1426,9 @@ html {
 }
 
 @media (min-width: 640px){
+  .sm\:mb-4{
+    margin-bottom: 1rem;
+  }
   .sm\:block{
     display: block;
   }
@@ -1405,18 +1438,36 @@ html {
   .sm\:max-w-none{
     max-width: none;
   }
+  .sm\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .sm\:grid-cols-\[65\%_35\%\]{
     grid-template-columns: 65% 35%;
   }
   .sm\:flex-row{
     flex-direction: row;
   }
+  .sm\:pt-12{
+    padding-top: 3rem;
+  }
+  .sm\:text-2xl{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
   .sm\:text-\[22px\]{
     font-size: 22px;
+  }
+  .sm\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
+  }
+  .sm\:before\:bg-\[url\(\'\/img\/contact-bg-t\.png\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('/img/contact-bg-t.png');
   }
 }
 
@@ -1482,8 +1533,14 @@ html {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  .md\:text-\[17px\]{
+    font-size: 17px;
+  }
   .md\:text-\[19px\]{
     font-size: 19px;
+  }
+  .md\:text-\[22px\]{
+    font-size: 22px;
   }
   .md\:text-\[94px\]{
     font-size: 94px;
@@ -1495,12 +1552,6 @@ html {
   .md\:text-lg{
     font-size: 1.125rem;
     line-height: 1.75rem;
-  }
-  .md\:text-\[22px\]{
-    font-size: 22px;
-  }
-  .md\:text-\[17px\]{
-    font-size: 17px;
   }
   .md\:text-sm{
     font-size: 0.875rem;
@@ -1515,14 +1566,26 @@ html {
   .lg\:order-first{
     order: -9999;
   }
+  .lg\:mb-6{
+    margin-bottom: 1.5rem;
+  }
   .lg\:block{
     display: block;
+  }
+  .lg\:flex{
+    display: flex;
+  }
+  .lg\:min-h-\[797px\]{
+    min-height: 797px;
   }
   .lg\:max-w-full{
     max-width: 100%;
   }
   .lg\:basis-\[320px\]{
     flex-basis: 320px;
+  }
+  .lg\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1538,6 +1601,9 @@ html {
   }
   .lg\:gap-12{
     gap: 3rem;
+  }
+  .lg\:gap-2{
+    gap: 0.5rem;
   }
   .lg\:gap-6{
     gap: 1.5rem;
@@ -1559,9 +1625,17 @@ html {
     padding-top: 7rem;
     padding-bottom: 7rem;
   }
+  .lg\:py-36{
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+  }
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+  .lg\:before\:bg-\[url\(\'\/img\/contact-bg-d\.png\'\)\]::before{
+    content: var(--tw-content);
+    background-image: url('/img/contact-bg-d.png');
   }
 }
 
