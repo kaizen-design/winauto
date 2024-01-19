@@ -44,7 +44,7 @@
 }
 
 .contact-section {
-  @apply bg-gradient-to-br from-[#E2EDFF] to-white min-h-[707px] lg:min-h-[797px] before:content-[''] relative before:absolute before:inset-0 z-0 before:bg-[url('/img/contact-bg-m.png')] before:bg-cover before:bg-bottom sm:before:bg-[url('/img/contact-bg-t.png')] lg:before:bg-[url('/img/contact-bg-d.png')] lg:flex lg:flex-col lg:justify-center;
+  @apply bg-gradient-to-br from-[#E2EDFF] to-white min-h-[707px] lg:min-h-[797px] before:content-[''] relative before:absolute before:inset-0 z-0 before:bg-[url('../img/contact-bg-m.png')] before:bg-cover before:bg-bottom sm:before:bg-[url('../img/contact-bg-t.png')] lg:before:bg-[url('../img/contact-bg-d.png')] lg:flex lg:flex-col lg:justify-center;
 }
 
 .footer-link {
