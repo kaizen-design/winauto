@@ -26,13 +26,15 @@
     "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
+    "push-dir": "^0.4.1",
     "sass": "^1.58.1",
     "tailwindcss": "^3.3.0"
   },
   "scripts": {
     "dev": "gulp",
     "build": "gulp prod",
-    "prod": "gulp prod"
+    "prod": "gulp prod",
+    "deploy": "push-dir --dir=dist --branch=gh-pages"
   },
   "repository": {
     "type": "git",
