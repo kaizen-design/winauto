@@ -12,10 +12,6 @@
   3. npm run prod //To generate minifed files for live server
 */
 
-var ghpages = require('gh-pages');
-
-ghpages.publish('prod', function(err) {});
-
 const { src, dest, watch, series, parallel } = require("gulp");
 const clean = require("gulp-clean"); //For Cleaning build/dist for fresh export
 const options = require("./config"); //paths and other options from config.js
