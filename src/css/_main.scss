@@ -54,3 +54,24 @@
 .footer-link {
   @apply font-inter text-sm lg:text-[15px] font-extrabold uppercase italic hover:text-primary-600 hover:border-b hover:border-primary-600 leading-snug transition-colors;
 }
+
+.service-slider-menu {
+  @apply flex flex-row lg:flex-col overflow-x-auto bg-secondary-900 lg:justify-center lg:basis-[320px] lg:gap-12 lg:px-16;
+}
+
+.services-slider-menu-link {
+  &.active {
+    @apply text-white cursor-default;
+    &:not([data-index="2"]) {
+      svg path {
+        fill: #fff;
+      }
+    }
+    &[data-index="2"] {
+      svg path {
+        stroke: #fff;
+      }
+    }
+  }
+  
+}

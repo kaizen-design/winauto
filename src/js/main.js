@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
   //  Homepage
   initReviewsSlider();
+  initServicesSlider();
 });
 
 function initMobileMenu() {
@@ -34,6 +35,44 @@ function initMobileMenu() {
   });
 }
 
+function initServicesSlider() {  
+  const $slider = document.querySelector(".servicesSlider");
+  
+  if (!$slider) return;
+  
+  const swiper = new Swiper($slider, {
+    slidesPerView: 1,
+    effect: "fade",
+    fadeEffect: { crossFade: true },
+    loop: true,
+    navigation: {
+      nextEl: ".serviceSliderBtnNext",
+      prevEl: ".serviceSliderBtnPrev",
+    },  
+    autoplay: {
+      delay: 5000,
+    },
+  });   
+
+  const $menuLinks = document.querySelectorAll('.service-slider-menu a');
+
+  $menuLinks.forEach(link => {
+    link.addEventListener("click", function() {
+      const slideId = this.getAttribute('data-index');
+      swiper.slideTo(slideId);
+      $menuLinks.forEach(i => i.classList.remove('active'));
+      this.classList.add('active');
+    })
+  });
+
+  swiper.on('slideChange', function () {
+    $menuLinks.forEach(i => i.classList.remove('active'));
+    const $link = document.querySelector(`.service-slider-menu a[data-index="${swiper.realIndex}"]`);
+    $link.classList.add('active');
+  });
+
+}
+
 function initReviewsSlider() {  
   const $slider = document.querySelector(".reviewsSlider");
   
@@ -44,12 +83,12 @@ function initReviewsSlider() {
     spaceBetween: 25,
     loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: "#reviewsSliderNextBtn",
+      prevEl: "#reviewsSliderPrevBtn",
     },  
-    /* autoplay: {
+    autoplay: {
       delay: 5000,
-    }, */
+    },
     breakpoints: {      
       // when window width is >= 640px
       640: {

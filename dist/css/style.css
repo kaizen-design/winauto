@@ -741,9 +741,6 @@ html {
 .grid-cols-1{
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.flex-row{
-  flex-direction: row;
-}
 .flex-col{
   flex-direction: column;
 }
@@ -800,9 +797,6 @@ html {
 }
 .overflow-hidden{
   overflow: hidden;
-}
-.overflow-x-auto{
-  overflow-x: auto;
 }
 .overflow-x-hidden{
   overflow-x: hidden;
@@ -870,10 +864,6 @@ html {
 .bg-secondary-800{
   --tw-bg-opacity: 1;
   background-color: rgb(24 39 53 / var(--tw-bg-opacity));
-}
-.bg-secondary-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 57 88 / var(--tw-bg-opacity));
 }
 .bg-white{
   --tw-bg-opacity: 1;
@@ -1471,83 +1461,97 @@ html {
   }
 }
 
+.service-slider-menu{
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 57 88 / var(--tw-bg-opacity));
+}
+
+@media (min-width: 1024px){
+  .service-slider-menu{
+    flex-basis: 320px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+.services-slider-menu-link.active{
+  cursor: default;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.services-slider-menu-link.active:not([data-index="2"]) svg path {
+  fill: #fff;
+}
+.services-slider-menu-link.active[data-index="2"] svg path {
+  stroke: #fff;
+}
 .before\:absolute::before{
   content: var(--tw-content);
   position: absolute;
 }
-
 .before\:inset-0::before{
   content: var(--tw-content);
   inset: 0px;
 }
-
 .before\:top-\[66px\]::before{
   content: var(--tw-content);
   top: 66px;
 }
-
 .before\:bg-gradient-to-t::before{
   content: var(--tw-content);
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
-
 .before\:content-\[\'\'\]::before{
   --tw-content: '';
   content: var(--tw-content);
 }
-
 .after\:\!content-\[\'\'\]::after{
   --tw-content: '' !important;
   content: var(--tw-content) !important;
 }
-
 .hover\:border-primary-700:hover{
   --tw-border-opacity: 1;
   border-color: rgb(227 55 55 / var(--tw-border-opacity));
 }
-
 .hover\:\!bg-primary-700:hover{
   --tw-bg-opacity: 1 !important;
   background-color: rgb(227 55 55 / var(--tw-bg-opacity)) !important;
 }
-
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-
 .hover\:text-primary:hover{
   --tw-text-opacity: 1;
   color: rgb(213 44 77 / var(--tw-text-opacity));
 }
-
 .hover\:text-secondary:hover{
   --tw-text-opacity: 1;
   color: rgb(30 67 101 / var(--tw-text-opacity));
 }
-
 .hover\:text-white:hover{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
 .group:hover .group-hover\:border{
   border-width: 1px;
 }
-
 .group:hover .group-hover\:border-white{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
-
 .group:hover .group-hover\:fill-white{
   fill: #FFF;
 }
-
 .group:hover .group-hover\:stroke-white{
   stroke: #FFF;
 }
-
 @media (min-width: 640px){
   .sm\:mb-4{
     margin-bottom: 1rem;
@@ -1621,7 +1625,6 @@ html {
     line-height: 1.25rem;
   }
 }
-
 @media (min-width: 768px){
   .md\:static{
     position: static;
@@ -1718,7 +1721,6 @@ html {
     letter-spacing: 7.52px;
   }
 }
-
 @media (min-width: 1024px){
   .lg\:order-first{
     order: -9999;
@@ -1747,9 +1749,6 @@ html {
   .lg\:max-w-full{
     max-width: 100%;
   }
-  .lg\:basis-\[320px\]{
-    flex-basis: 320px;
-  }
   .lg\:grid-cols-1{
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -1764,12 +1763,6 @@ html {
   }
   .lg\:flex-col{
     flex-direction: column;
-  }
-  .lg\:justify-center{
-    justify-content: center;
-  }
-  .lg\:gap-12{
-    gap: 3rem;
   }
   .lg\:gap-16{
     gap: 4rem;
@@ -1794,10 +1787,6 @@ html {
   }
   .lg\:p-10{
     padding: 2.5rem;
-  }
-  .lg\:px-16{
-    padding-left: 4rem;
-    padding-right: 4rem;
   }
   .lg\:py-16{
     padding-top: 4rem;
@@ -1831,13 +1820,11 @@ html {
     line-height: 1.75rem;
   }
 }
-
 @media (min-width: 1180px){
   .min-\[1180px\]\:flex{
     display: flex;
   }
 }
-
 @media (min-width: 1280px){
   .xl\:order-last{
     order: 9999;
@@ -1889,7 +1876,6 @@ html {
     background-image: linear-gradient(to right, var(--tw-gradient-stops));
   }
 }
-
 @media (min-width: 1536px){
   .\32xl\:p-24{
     padding: 6rem;
