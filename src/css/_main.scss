@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;600;700;800&family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;600;700;800&family=Inter:wght@400;500;700&display=swap');
 
 .container {
   @apply w-full max-w-7xl px-4 md:px-6 mx-auto;
@@ -45,4 +45,8 @@
 
 .contact-section {
   @apply bg-gradient-to-br from-[#E2EDFF] to-white min-h-[707px] lg:min-h-[797px] before:content-[''] relative before:absolute before:inset-0 z-0 before:bg-[url('/img/contact-bg-m.png')] before:bg-cover before:bg-bottom sm:before:bg-[url('/img/contact-bg-t.png')] lg:before:bg-[url('/img/contact-bg-d.png')] lg:flex lg:flex-col lg:justify-center;
+}
+
+.footer-link {
+  @apply font-inter text-sm lg:text-[15px] font-extrabold uppercase italic hover:text-primary-600 hover:border-b hover:border-primary-600 leading-snug;
 }

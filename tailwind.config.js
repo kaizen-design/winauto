@@ -23,6 +23,7 @@ module.exports = {
       colors: {
         primary: {
           DEFAULT: '#D52C4D',
+          600: '#FA4C4C',
           700: '#E33737',
           800: '#C92B2B'
         },
@@ -34,6 +35,7 @@ module.exports = {
           900: '#173958'
         },
         gray: {
+          400: '#EBEBEB',
           500: '#909090',
           600: '#666',
           700: '#696969'
@@ -44,6 +46,7 @@ module.exports = {
         },
         white: {
           DEFAULT: '#FFF',
+          50: '#FAFAFA',
           100: '#F7F9FA'
         }
       },
