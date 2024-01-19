@@ -676,11 +676,17 @@ html {
 .h-full{
   height: 100%;
 }
+.h-\[489px\]{
+  height: 489px;
+}
 .min-h-\[100px\]{
   min-height: 100px;
 }
-.min-h-\[707px\]{
-  min-height: 707px;
+.min-h-\[\]{
+  min-height: ;
+}
+.min-h-\[489px\]{
+  min-height: 489px;
 }
 .\!w-\[60px\]{
   width: 60px !important;
@@ -835,15 +841,13 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
-.bg-gradient-to-br{
-  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+.bg-gray-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
-.from-\[\#E2EDFF\]{
-  --tw-gradient-from: #E2EDFF var(--tw-gradient-from-position);
-  --tw-gradient-from-position:  ;
-  --tw-gradient-to: rgb(226 237 255 / 0)  var(--tw-gradient-from-position);
-  --tw-gradient-to-position:  ;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+.bg-gray-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
 .from-secondary{
   --tw-gradient-from: #1E4365 var(--tw-gradient-from-position);
@@ -851,10 +855,6 @@ html {
   --tw-gradient-to: rgb(30 67 101 / 0)  var(--tw-gradient-from-position);
   --tw-gradient-to-position:  ;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-.to-white{
-  --tw-gradient-to: #FFF var(--tw-gradient-to-position);
-  --tw-gradient-to-position:  ;
 }
 .fill-secondary-300{
   fill: #90B8DD;
@@ -865,6 +865,10 @@ html {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center{
+  -o-object-position: center;
+     object-position: center;
 }
 .p-4{
   padding: 1rem;
@@ -1348,24 +1352,9 @@ html {
   top: 66px;
 }
 
-.before\:bg-\[url\(\'\/img\/contact-bg-m\.png\'\)\]::before{
-  content: var(--tw-content);
-  background-image: url('/img/contact-bg-m.png');
-}
-
 .before\:bg-gradient-to-t::before{
   content: var(--tw-content);
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
-}
-
-.before\:bg-cover::before{
-  content: var(--tw-content);
-  background-size: cover;
-}
-
-.before\:bg-bottom::before{
-  content: var(--tw-content);
-  background-position: bottom;
 }
 
 .before\:content-\[\'\'\]::before{
@@ -1464,10 +1453,6 @@ html {
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-  .sm\:before\:bg-\[url\(\'\/img\/contact-bg-t\.png\'\)\]::before{
-    content: var(--tw-content);
-    background-image: url('/img/contact-bg-t.png');
   }
 }
 
@@ -1572,12 +1557,6 @@ html {
   .lg\:block{
     display: block;
   }
-  .lg\:flex{
-    display: flex;
-  }
-  .lg\:min-h-\[797px\]{
-    min-height: 797px;
-  }
   .lg\:max-w-full{
     max-width: 100%;
   }
@@ -1632,10 +1611,6 @@ html {
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
-  }
-  .lg\:before\:bg-\[url\(\'\/img\/contact-bg-d\.png\'\)\]::before{
-    content: var(--tw-content);
-    background-image: url('/img/contact-bg-d.png');
   }
 }
 
