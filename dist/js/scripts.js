@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initModals();
   handleCallbackForm();
+  initSmoothScroll();
 
   //  Homepage
   initReviewsSlider();
@@ -210,4 +211,19 @@ function handleCallbackForm() {
           
     });
   })
+}
+
+function initSmoothScroll($el = document) {
+  $el.querySelectorAll('.smoothScroll').forEach(link => {
+    link.addEventListener("click", function(e) {
+      e.preventDefault();
+      const href = this.getAttribute("href"), 
+            el = document.querySelector(href); 
+      try {
+        el.scrollIntoView({ block: "start", behavior: "smooth" });
+      } catch (e) {
+        console.error(`Element with the ${href} ID not found`)
+      }  
+    });
+  });
 }

@@ -50,10 +50,10 @@
         <nav class="w-full mt-3 hidden md:block">
           <div class="container">
             <ul class="flex items-center gap-10">
-              <li><a href="#" class="menu-link active">О центре</a></li>
-              <li><a href="#" class="menu-link">Услуги</a></li>
-              <li><a href="#" class="menu-link">Клиенты</a></li>
-              <li><a href="#" class="menu-link">Контакты</a></li>
+              <li><a href="#company" class="menu-link smoothScroll">О центре</a></li>
+              <li><a href="#services" class="menu-link smoothScroll">Услуги</a></li>
+              <li><a href="#reviews" class="menu-link smoothScroll">Клиенты</a></li>
+              <li><a href="#contacts" class="menu-link smoothScroll">Контакты</a></li>
             </ul>
           </div>
         </nav>
@@ -61,10 +61,10 @@
       <!-- MOBILE NAV -->
       <nav id="mobileNav" class="md:hidden relative z-[1] hidden">
         <ul class="bg-white flex flex-col items-center gap-10 py-10 px-4 border-t border-gray-400">
-          <li><a href="#" class="mobile-menu-link">О центре</a></li>
-          <li><a href="#" class="mobile-menu-link">Услуги</a></li>
-          <li><a href="#" class="mobile-menu-link">Клиенты</a></li>
-          <li><a href="#" class="mobile-menu-link">Контакты</a></li>
+          <li><a href="#company" class="mobile-menu-link smoothScroll">О центре</a></li>
+          <li><a href="#services" class="mobile-menu-link smoothScroll">Услуги</a></li>
+          <li><a href="#reviews" class="mobile-menu-link smoothScroll">Клиенты</a></li>
+          <li><a href="#contacts" class="mobile-menu-link smoothScroll">Контакты</a></li>
         </ul> 
       </nav>  
     </header>
@@ -84,7 +84,7 @@
     </section>
 
     <!-- ABOUT COMPANY -->
-    <section>
+    <section id="company">
       <div class="container py-6 md:py-16 lg:py-28 overflow-hidden">
         <div class="grid sm:grid-cols-[65%_35%] lg:grid-cols-2 gap-8 md:gap-12 items-center">
           <div class="order-last lg:order-first">
@@ -110,13 +110,13 @@
     </section>
 
     <!-- SERVICES -->
-    <ul class="services-grid">
+    <ul id="services" class="services-grid">
       <li class="services-grid-item group relative">
         <img src="img/service.png" alt="Автосервис" class="absolute top-0 bottom-0 left-0 max-w-[120px] object-cover h-full" />
         <div class="flex flex-col gap-3 w-full">
           <h3 class="uppercase font-bold font-inter text-lg sm:text-[22px] lg:text-2xl line-clamp-1">Автосервис</h3>
           <p class="text-xs sm:text-sm max-w-[200px]">Ремонт вашего авто профессионалами</p>
-          <a href="#" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
+          <a href="https://vezdehod-shop.ru" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
             <span class="line-clamp-1">Перейти на сайт</span>
             <img src="img/icons/arrow-right.svg" alt="" />
           </a>
@@ -127,7 +127,7 @@
         <div class="flex flex-col gap-3 w-full">
           <h3 class="uppercase font-bold font-inter text-lg sm:text-[22px] lg:text-2xl line-clamp-1">Магазин</h3>
           <p class="text-xs sm:text-sm max-w-[200px]">Запчасти всегда в наличии, быстрая доставка</p>
-          <a href="#" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
+          <a href="https://winauto-shop.ru" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
             <span class="line-clamp-1">Смотреть товары</span>
             <img src="img/icons/arrow-right.svg" alt="" />
           </a>
@@ -138,7 +138,7 @@
         <div class="flex flex-col gap-3 w-full">
           <h3 class="uppercase font-bold font-inter text-lg sm:text-[22px] lg:text-2xl line-clamp-1">Вездеход</h3>
           <p class="text-xs sm:text-sm max-w-[200px]">Запчасти всегда в наличии, быстрая доставка</p>
-          <a href="#" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
+          <a href="https://vezdehod-shop.ru" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
             <span class="line-clamp-1">Перейти на сайт</span>
             <img src="img/icons/arrow-right.svg" alt="" />
           </a>
@@ -149,7 +149,7 @@
         <div class="flex flex-col gap-3 w-full">
           <h3 class="uppercase font-bold font-inter text-lg sm:text-[22px] lg:text-2xl line-clamp-1">Продажа авто</h3>
           <p class="text-xs sm:text-sm max-w-[200px]">Запчасти всегда в наличии, быстрая доставка</p>
-          <a href="#" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
+          <a href="/inner.html" class="btn-primary border border-transparent group-hover:border group-hover:border-white">
             <span class="line-clamp-1">Читать подробнее</span>
             <img src="img/icons/arrow-right.svg" alt="" />
           </a>
@@ -253,7 +253,7 @@
                 <ul class="flex flex-col gap-2">
                   <li class="flex flex-col">
                     <span class="text-secondary-400 text-xs font-inter">Сайт магазина:</span>
-                    <a class="font-inter font-medium text-[15px] underline hover:text-primary transition-colors self-start" href="https://winauto-shop.ru">https://winauto-shop.ru</a>
+                    <a class="font-inter font-medium text-[15px] underline hover:text-primary transition-colors self-start" href="https://vezdehod-shop.ru">https://vezdehod-shop.ru</a>
                   </li>
                   <li class="flex flex-col">
                     <span class="text-secondary-400 text-xs font-inter">Адрес магазина:</span>
@@ -262,7 +262,7 @@
                   </li>
                 </ul>
                 <div class="flex flex-col gap-2 sm:flex-row">
-                  <a href="#" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
+                  <a href="https://vezdehod-shop.ru" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
                   <a href="#" class="font-extrabold italic uppercase text-[13px] text-white py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-white border transition-all modal-open">Заказать звонок</a>
                 </div>
               </div>
@@ -306,7 +306,7 @@
                   </li>
                 </ul>
                 <div class="flex flex-col gap-2 sm:flex-row">
-                  <a href="#" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
+                  <a href="https://winauto-shop.ru" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
                   <a href="#" class="font-extrabold italic uppercase text-[13px] text-white py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-white border transition-all modal-open">Заказать звонок</a>
                 </div>
               </div>
@@ -349,7 +349,7 @@
                   </li>
                 </ul>
                 <div class="flex flex-col gap-2 sm:flex-row">
-                  <a href="#" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
+                  <a href="https://vezdehod-shop.ru" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
                   <a href="#" class="font-extrabold italic uppercase text-[13px] text-white py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-white border transition-all modal-open">Заказать звонок</a>
                 </div>
               </div>
@@ -388,7 +388,7 @@
                   </li>
                 </ul>
                 <div class="flex flex-col gap-2 sm:flex-row">
-                  <a href="#" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
+                  <a href="/inner.html" class="font-extrabold italic uppercase text-[13px] text-white bg-primary py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-transparent border transition-all">Смотреть услугу</a>
                   <a href="#" class="font-extrabold italic uppercase text-[13px] text-white py-3 px-6 xl:py-5 2xl:px-9 rounded-full text-center hover:bg-white hover:text-secondary border-white border transition-all modal-open">Заказать звонок</a>
                 </div>
               </div>
@@ -401,7 +401,7 @@
     </section>
 
     <!-- REVIEWS -->
-    <section class="py-6 md:py-12 xl:py-20">
+    <section id="reviews" class="py-6 md:py-12 xl:py-20">
       <div class="container">
         <div class="flex justify-between mb-6 md:mb-12 xl:mb-16 w-full">
           <div class="flex flex-col gap-2 md:gap-4 w-full">
@@ -491,7 +491,7 @@
           </div>
         </div>
         <div class="flex justify-center">
-          <a href="#" class="flex items-center uppercase text-xs md:text-sm font-semibold border border-black rounded-full py-3 px-8 mt-7 md:mt-12 xl:mt-16 gap-2 transition-all hover:text-primary hover:border-primary">
+          <a href="https://yandex.ru/maps/org/winauto_express/1066362571/reviews/?ll=30.339952%2C59.988545&z=16" class="flex items-center uppercase text-xs md:text-sm font-semibold border border-black rounded-full py-3 px-8 mt-7 md:mt-12 xl:mt-16 gap-2 transition-all hover:text-primary hover:border-primary" target="_blank">
             <img src="img/icons/yandex.svg" alt="Yandex" />
             Смотреть все отзывы
           </a>
@@ -500,7 +500,7 @@
     </section>
 
     <!-- CONTACTS -->
-    <section class="contact-section">
+    <section id="contacts" class="contact-section">
       <div class="container pt-4 sm:pt-12 lg:py-36 relative z-[1]">
         <div class="grid grid-cols-1 items-center lg:grid-cols-2">
           <div class="flex flex-col gap-6">
@@ -635,16 +635,16 @@
           </div>
           <div class="flex gap-16 flex-1">
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="footer-link">О центре</a></li>
-              <li><a href="#" class="footer-link">Услуги</a></li>
-              <li><a href="#" class="footer-link">О центре</a></li>
-              <li><a href="#" class="footer-link">Контакты</a></li>
+              <li><a href="#company" class="footer-link smoothScroll">О центре</a></li>
+              <li><a href="#services" class="footer-link smoothScroll">Услуги</a></li>
+              <li><a href="#reviews" class="footer-link smoothScroll">Клиенты</a></li>
+              <li><a href="#contacts" class="footer-link smoothScroll">Контакты</a></li>
             </ul>
             <ul class="flex flex-col gap-6">
-              <li><a href="#" class="footer-link">Автосервис</a></li>
-              <li><a href="#" class="footer-link">Магазин</a></li>
-              <li><a href="#" class="footer-link">Все для оффроуда</a></li>
-              <li><a href="#" class="footer-link">Продажа авто</a></li>
+              <li><a href="https://vezdehod-shop.ru" class="footer-link">Автосервис</a></li>
+              <li><a href="https://winauto-shop.ru" class="footer-link">Магазин</a></li>
+              <li><a href="https://vezdehod-shop.ru" class="footer-link">Все для оффроуда</a></li>
+              <li><a href="/inner.html" class="footer-link">Продажа авто</a></li>
             </ul>
           </div>
           <div class="flex flex-col gap-6 lg:gap-8 ">
@@ -681,7 +681,7 @@
       </div>
     </footer>
 
-    <a href="#" class="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-primary hover:bg-secondary transition-colors shadow-lg fixed bottom-4 right-4 z-[100]">
+    <a href="#" class="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-primary hover:bg-secondary transition-colors shadow-lg fixed bottom-4 right-4 z-[100] modal-open">
       <img src="img/icons/phone.svg" alt="" />
     </a>
 
@@ -703,8 +703,8 @@
               <p class="text-sm text-gray-700">И наши менеджеры помогут вам</p>
             </div>
             <form class="callback-form flex flex-col gap-5">
-              <input type="text" placeholder="Ваше имя" class="form-control" />
-              <input type="text" placeholder="Телефон" class="form-control" />
+              <input type="text" name="name" placeholder="Ваше имя" class="form-control" />
+              <input type="text" name="phone" placeholder="Телефон" class="form-control" />
               <label class="inline-flex items-center">
                 <input type="checkbox" class="text-secondary focus:ring-secondary border-gray-300">
                 <span class="ml-3 text-xs text-gray-700 leading-tight">Я согласен с <a href="#" class="text-primary border-b border-primary hover:text-secondary hover:border-secondary">правилами обработки</a> личных данных</span>
