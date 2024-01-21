@@ -11,6 +11,7 @@ window.addEventListener("DOMContentLoaded", () => {
   //  Homepage
   initReviewsSlider();
   initServicesSlider();
+  initContactPopover();
 });
 
 function initMobileMenu() {
@@ -101,4 +102,42 @@ function initReviewsSlider() {
       },
     }
   });    
+}
+
+function initContactPopover() {
+  const $hotspots = document.querySelectorAll(".hotspot");
+  const $tooltips = document.querySelectorAll(".tooltip");
+
+  if (!$hotspots && !$tooltips) return;
+ 
+  $hotspots.forEach(hotspot => {
+    const id = hotspot.getAttribute('data-id')
+    const tooltip = document.querySelector(`#${id}`); 
+
+    const popperInstance = Popper.createPopper(hotspot, tooltip, {
+      placement: 'top-end',
+      modifiers: [
+        {
+          name: 'offset',
+          options: {
+            offset: [0, 20],
+          },
+        },
+      ],
+    });
+    
+    hotspot.addEventListener('click', function() {
+      $tooltips.forEach((el) => el.removeAttribute('data-show'));
+      tooltip.setAttribute('data-show', '');
+      popperInstance.update();
+    });
+    
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!e.target.classList.contains('hotspot')) {
+      $tooltips.forEach(el => el.removeAttribute('data-show'));
+    }
+  });
+  
 }

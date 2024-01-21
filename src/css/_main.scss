@@ -76,5 +76,12 @@
 }
 
 .hotspot {
-  @apply w-[39px] h-[39px] rounded-full bg-primary-700 before:content-[''] before:w-[17px] before:h-[17px] before:bg-white before:rounded-full flex items-center justify-center absolute hover:w-[75px] hover:h-[75px] active:w-[75px] active:h-[75px] z-10 transition-all;
+  @apply w-[39px] h-[39px] rounded-full bg-primary-700 before:content-[''] before:w-[17px] before:h-[17px] before:bg-white before:rounded-full flex items-center justify-center absolute focus:w-[75px] focus:h-[75px] active:w-[75px] active:h-[75px] z-[1] transition-all;
+}
+
+.tooltip {
+  @apply bg-white shadow-lg rounded-xl p-5 max-w-[325px] z-10;
+  &:not([data-show]) {
+    @apply hidden;
+  }
 }
