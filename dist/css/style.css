@@ -598,8 +598,8 @@ html {
 .inset-0{
   inset: 0px;
 }
-.-left-8{
-  left: -2rem;
+.-left-1{
+  left: -0.25rem;
 }
 .bottom-0{
   bottom: 0px;
@@ -646,12 +646,6 @@ html {
 .top-1\/2{
   top: 50%;
 }
-.-left-4{
-  left: -1rem;
-}
-.-left-1{
-  left: -0.25rem;
-}
 .z-0{
   z-index: 0;
 }
@@ -691,9 +685,8 @@ html {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
-.-mx-6{
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+.-mb-5{
+  margin-bottom: -1.25rem;
 }
 .mb-6{
   margin-bottom: 1.5rem;
@@ -710,14 +703,8 @@ html {
 .mt-7{
   margin-top: 1.75rem;
 }
-.-mb-5{
-  margin-bottom: -1.25rem;
-}
 .mt-auto{
   margin-top: auto;
-}
-.-mt-5{
-  margin-top: -1.25rem;
 }
 .line-clamp-1{
   overflow: hidden;
@@ -773,21 +760,15 @@ html {
 .h-\[60px\]{
   height: 60px;
 }
-.h-full{
-  height: 100%;
-}
 .h-fit{
   height: -moz-fit-content;
   height: fit-content;
 }
+.h-full{
+  height: 100%;
+}
 .min-h-\[100px\]{
   min-height: 100px;
-}
-.min-h-\[\]{
-  min-height: ;
-}
-.min-h-\[413px\]{
-  min-height: 413px;
 }
 .\!w-\[60px\]{
   width: 60px !important;
@@ -804,6 +785,9 @@ html {
 .w-\[21px\]{
   width: 21px;
 }
+.w-\[242px\]{
+  width: 242px;
+}
 .w-\[35px\]{
   width: 35px;
 }
@@ -816,18 +800,12 @@ html {
 .w-\[70px\]{
   width: 70px;
 }
-.w-full{
-  width: 100%;
-}
-.w-\[242px\]{
-  width: 242px;
-}
 .w-fit{
   width: -moz-fit-content;
   width: fit-content;
 }
-.min-w-\[242px\]{
-  min-width: 242px;
+.w-full{
+  width: 100%;
 }
 .min-w-\[320px\]{
   min-width: 320px;
@@ -858,9 +836,6 @@ html {
 }
 .max-w-\[92px\]{
   max-width: 92px;
-}
-.max-w-\[242px\]{
-  max-width: 242px;
 }
 .flex-1{
   flex: 1 1 0%;
@@ -1067,11 +1042,11 @@ html {
   --tw-gradient-to: #F1F6FB var(--tw-gradient-to-position);
   --tw-gradient-to-position:  ;
 }
-.bg-left-top{
-  background-position: left top;
-}
 .bg-bottom{
   background-position: bottom;
+}
+.bg-left-top{
+  background-position: left top;
 }
 .bg-no-repeat{
   background-repeat: no-repeat;
@@ -1091,6 +1066,10 @@ html {
 }
 .p-5{
   padding: 1.25rem;
+}
+.px-10{
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 .px-12{
   padding-left: 3rem;
@@ -1140,6 +1119,10 @@ html {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 .py-5{
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1152,13 +1135,8 @@ html {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-.px-10{
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+.pb-10{
+  padding-bottom: 2.5rem;
 }
 .pb-8{
   padding-bottom: 2rem;
@@ -1174,12 +1152,6 @@ html {
 }
 .pt-\[116px\]{
   padding-top: 116px;
-}
-.pb-6{
-  padding-bottom: 1.5rem;
-}
-.pb-10{
-  padding-bottom: 2.5rem;
 }
 .text-left{
   text-align: left;
@@ -1329,13 +1301,13 @@ html {
   --tw-text-opacity: 1;
   color: rgb(139 170 199 / var(--tw-text-opacity));
 }
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
 .text-secondary-500{
   --tw-text-opacity: 1;
   color: rgb(61 121 177 / var(--tw-text-opacity));
+}
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 .underline{
   text-decoration-line: underline;
@@ -2359,14 +2331,6 @@ body.modal-active {
     padding-top: 9rem;
     padding-bottom: 9rem;
   }
-  .lg\:px-5{
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-  }
-  .lg\:py-3{
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
   .lg\:pt-\[72px\]{
     padding-top: 72px;
   }
@@ -2386,9 +2350,6 @@ body.modal-active {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-  .lg\:text-\[13px\]{
-    font-size: 13px;
-  }
 }
 
 @media (min-width: 1180px){
@@ -2401,20 +2362,14 @@ body.modal-active {
   .xl\:order-last{
     order: 9999;
   }
+  .xl\:-mt-8{
+    margin-top: -2rem;
+  }
   .xl\:mb-16{
     margin-bottom: 4rem;
   }
   .xl\:mt-16{
     margin-top: 4rem;
-  }
-  .xl\:-mt-5{
-    margin-top: -1.25rem;
-  }
-  .xl\:-mt-6{
-    margin-top: -1.5rem;
-  }
-  .xl\:-mt-8{
-    margin-top: -2rem;
   }
   .xl\:h-full{
     height: 100%;
