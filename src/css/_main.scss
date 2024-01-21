@@ -85,3 +85,14 @@
     @apply hidden;
   }
 }
+
+.modal {
+  transition: opacity 0.25s ease;
+}
+body.modal-active {
+  overflow: hidden;
+}
+
+.form-control {
+  @apply focus:border-secondary border-gray-300 font-inter;
+}
