@@ -26,13 +26,13 @@ function initMobileMenu() {
   const closeIcon = 'img/icons/close.svg';
 
   $toggle.addEventListener("click", e => {
-    const className = '-translate-y-full';
+    const className = 'hidden';
     if ($menu.classList.contains(className)) {
       $icon[0].setAttribute('src', closeIcon);
-      $menu.classList.remove('-translate-y-full')
+      $menu.classList.remove(className)
     } else {
       $icon[0].setAttribute('src', menuIcon);
-      $menu.classList.add('-translate-y-full');
+      $menu.classList.add(className);
     }
   });
 }
