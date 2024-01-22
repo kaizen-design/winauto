@@ -9,7 +9,7 @@
 }
 
 .menu-link {
-  @apply uppercase font-extrabold italic text-black text-[15px] font-inter px-4 border-b-[5px] border-transparent pb-3 flex hover:border-primary transition-colors;
+  @apply uppercase font-extrabold italic text-black text-[15px] font-inter px-4 border-b-[5px] border-transparent pb-3 flex hover:border-primary focus:border-primary transition-colors;
   /* &.active {
     @apply  cursor-default hover:text-black;
   } */

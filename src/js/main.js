@@ -49,14 +49,36 @@ function initServicesSlider() {
     effect: "fade",
     fadeEffect: { crossFade: true },
     loop: true,
-    navigation: {
+    /* navigation: {
       nextEl: ".serviceSliderBtnNext",
       prevEl: ".serviceSliderBtnPrev",
-    },  
-    autoplay: {
+    },  */ 
+    /* autoplay: {
       delay: 5000,
-    },
-  });   
+    }, */
+  });  
+  
+  const $servicesSliders = document.querySelectorAll(".serviceGallerySlider");
+
+  if ($servicesSliders) {
+    $servicesSliders.forEach((slider) => {
+      const servicesSlider = new Swiper(slider, {
+        slidesPerView: 1,
+        effect: "fade",
+        fadeEffect: { crossFade: true },
+        loop: true,
+        navigation: {
+          nextEl: slider.parentNode.querySelector('.serviceSliderBtnNext'),
+          prevEl: slider.parentNode.querySelector('.serviceSliderBtnPrev'),
+        },  
+        /* autoplay: {
+          delay: 5000,
+        }, */
+      });  
+    })
+  }
+
+  
 
   const $menuLinks = document.querySelectorAll('.service-slider-menu a');
 

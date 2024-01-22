@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="bg-white relative z-10">
-        <div class="container flex items-center justify-center py-6 md:py-8 relative md:justify-between">
+        <div class="container flex items-center justify-center py-6 md:pt-8 md:pb-5 relative md:justify-between">
           <div class="">
             <a id="mobileMenuToggle" href="#" class="w-[21px] h-[21px] flex items-center justify-center absolute left-4 md:hidden">
               <img src="img/icons/menu.svg" alt="Menu" />
@@ -46,17 +46,6 @@
             </a>
           </div>
         </div>
-        <!-- MAIN NAV -->
-        <nav class="w-full mt-3 hidden md:block">
-          <div class="container">
-            <ul class="flex items-center gap-10">
-              <li><a href="#company" class="menu-link smoothScroll">О центре</a></li>
-              <li><a href="#services" class="menu-link smoothScroll">Услуги</a></li>
-              <li><a href="#reviews" class="menu-link smoothScroll">Клиенты</a></li>
-              <li><a href="#contacts" class="menu-link smoothScroll">Контакты</a></li>
-            </ul>
-          </div>
-        </nav>
       </div>
       <!-- MOBILE NAV -->
       <nav id="mobileNav" class="md:hidden relative z-[1] hidden">
@@ -68,6 +57,17 @@
         </ul> 
       </nav>  
     </header>
+    <!-- MAIN NAV -->
+    <nav class="bg-white w-full pt-5 sticky top-0 z-[99] shadow-md hidden md:flex">
+      <div class="container">
+        <ul class="flex items-center gap-10">
+          <li><a href="#company" class="menu-link smoothScroll">О центре</a></li>
+          <li><a href="#services" class="menu-link smoothScroll">Услуги</a></li>
+          <li><a href="#reviews" class="menu-link smoothScroll">Клиенты</a></li>
+          <li><a href="#contacts" class="menu-link smoothScroll">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- SPLASH -->
     <section class="splash has-overlay">
@@ -227,15 +227,26 @@
         <div class="swiper-wrapper h-full">
           <div class="swiper-slide h-full">
             <div class="h-full relative flex flex-col xl:flex-row xl:items-center">
-              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 xl:before:bg-gradient-to-r">
-                <img src="img/slide-1.jpg" alt="Автосервис" class="object-cover w-full h-full" />
-                <a href="#" class="absolute left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
+              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 xl:before:bg-gradient-to-r before:z-[5]">
+                
+                <div class="serviceGallerySlider swiper w-full h-full">
+                  <div class="swiper-wrapper h-full">
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-1.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-2.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                  </div>    
+                </div>
+                
+                <a href="#" class="absolute z-10 left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M11.1569 17.0895C10.7664 17.48 10.7664 18.1132 11.1569 18.5037L17.5209 24.8677C17.9114 25.2582 18.5446 25.2582 18.9351 24.8677C19.3256 24.4772 19.3256 23.844 18.9351 23.4535L13.2782 17.7966L18.9351 12.1398C19.3256 11.7493 19.3256 11.1161 18.9351 10.7256C18.5446 10.335 17.9114 10.335 17.5209 10.7256L11.1569 17.0895ZM22.542 16.7966L11.864 16.7966L11.864 18.7966L22.542 18.7966L22.542 16.7966Z" fill="black"/>
                   </svg>
                 </a>
-                <a href="#" class="absolute right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
+                <a href="#" class="absolute z-10 right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M23.2493 17.0895C23.6399 17.48 23.6399 18.1132 23.2493 18.5037L16.8854 24.8677C16.4948 25.2582 15.8617 25.2582 15.4712 24.8677C15.0806 24.4772 15.0806 23.844 15.4712 23.4535L21.128 17.7966L15.4712 12.1398C15.0806 11.7493 15.0806 11.1161 15.4712 10.7256C15.8617 10.335 16.4948 10.335 16.8854 10.7256L23.2493 17.0895ZM11.8643 16.7966L22.5422 16.7966L22.5422 18.7966L11.8643 18.7966L11.8643 16.7966Z" fill="black"/>
@@ -271,15 +282,26 @@
 
           <div class="swiper-slide h-full">
             <div class="h-full relative flex flex-col xl:flex-row xl:items-center">
-              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 xl:before:bg-gradient-to-r">
-                <img src="img/slide-2.jpg" alt="Автосервис" class="object-cover w-full h-full" />
-                <a href="#" class="absolute left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
+              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 before:z-[5] xl:before:bg-gradient-to-r">
+                
+                <div class="serviceGallerySlider swiper w-full h-full">
+                  <div class="swiper-wrapper h-full">
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-2.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-3.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                  </div>    
+                </div>
+
+                <a href="#" class="absolute z-10 left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M11.1569 17.0895C10.7664 17.48 10.7664 18.1132 11.1569 18.5037L17.5209 24.8677C17.9114 25.2582 18.5446 25.2582 18.9351 24.8677C19.3256 24.4772 19.3256 23.844 18.9351 23.4535L13.2782 17.7966L18.9351 12.1398C19.3256 11.7493 19.3256 11.1161 18.9351 10.7256C18.5446 10.335 17.9114 10.335 17.5209 10.7256L11.1569 17.0895ZM22.542 16.7966L11.864 16.7966L11.864 18.7966L22.542 18.7966L22.542 16.7966Z" fill="black"/>
                   </svg>
                 </a>
-                <a href="#" class="absolute right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
+                <a href="#" class="absolute z-10 right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M23.2493 17.0895C23.6399 17.48 23.6399 18.1132 23.2493 18.5037L16.8854 24.8677C16.4948 25.2582 15.8617 25.2582 15.4712 24.8677C15.0806 24.4772 15.0806 23.844 15.4712 23.4535L21.128 17.7966L15.4712 12.1398C15.0806 11.7493 15.0806 11.1161 15.4712 10.7256C15.8617 10.335 16.4948 10.335 16.8854 10.7256L23.2493 17.0895ZM11.8643 16.7966L22.5422 16.7966L22.5422 18.7966L11.8643 18.7966L11.8643 16.7966Z" fill="black"/>
@@ -315,15 +337,26 @@
 
           <div class="swiper-slide h-full">
             <div class="h-full relative flex flex-col xl:flex-row xl:items-center">
-              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 xl:before:bg-gradient-to-r">
-                <img src="img/slide-3.jpg" alt="Автосервис" class="object-cover w-full h-full" />
-                <a href="#" class="absolute left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
+              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 before:z-[5] xl:before:bg-gradient-to-r">
+                
+                <div class="serviceGallerySlider swiper w-full h-full">
+                  <div class="swiper-wrapper h-full">
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-3.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-4.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                  </div>    
+                </div>
+
+                <a href="#" class="absolute z-10 left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M11.1569 17.0895C10.7664 17.48 10.7664 18.1132 11.1569 18.5037L17.5209 24.8677C17.9114 25.2582 18.5446 25.2582 18.9351 24.8677C19.3256 24.4772 19.3256 23.844 18.9351 23.4535L13.2782 17.7966L18.9351 12.1398C19.3256 11.7493 19.3256 11.1161 18.9351 10.7256C18.5446 10.335 17.9114 10.335 17.5209 10.7256L11.1569 17.0895ZM22.542 16.7966L11.864 16.7966L11.864 18.7966L22.542 18.7966L22.542 16.7966Z" fill="black"/>
                   </svg>
                 </a>
-                <a href="#" class="absolute right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
+                <a href="#" class="absolute z-10 right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M23.2493 17.0895C23.6399 17.48 23.6399 18.1132 23.2493 18.5037L16.8854 24.8677C16.4948 25.2582 15.8617 25.2582 15.4712 24.8677C15.0806 24.4772 15.0806 23.844 15.4712 23.4535L21.128 17.7966L15.4712 12.1398C15.0806 11.7493 15.0806 11.1161 15.4712 10.7256C15.8617 10.335 16.4948 10.335 16.8854 10.7256L23.2493 17.0895ZM11.8643 16.7966L22.5422 16.7966L22.5422 18.7966L11.8643 18.7966L11.8643 16.7966Z" fill="black"/>
@@ -358,15 +391,26 @@
 
           <div class="swiper-slide h-full">
             <div class="h-full relative flex flex-col xl:flex-row xl:items-center">
-              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 xl:before:bg-gradient-to-r">
-                <img src="img/slide-4.jpg" alt="Автосервис" class="object-cover w-full h-full" />
-                <a href="#" class="absolute left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
+              <div class="relative h-[343px] xl:h-full xl:w-1/2 xl:order-last before:absolute before:content-[''] before:inset-0 before:top-[66px] before:bg-gradient-to-t from-secondary xl:before:top-0 before:z-[5] xl:before:bg-gradient-to-r">
+                
+                <div class="serviceGallerySlider swiper w-full h-full">
+                  <div class="swiper-wrapper h-full">
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-4.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                    <div class="swiper-slide h-full">
+                      <img src="img/slide-1.jpg" alt="Автосервис" class="object-cover w-full h-full" />
+                    </div>
+                  </div>    
+                </div>
+
+                <a href="#" class="absolute z-10 left-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnPrev">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M11.1569 17.0895C10.7664 17.48 10.7664 18.1132 11.1569 18.5037L17.5209 24.8677C17.9114 25.2582 18.5446 25.2582 18.9351 24.8677C19.3256 24.4772 19.3256 23.844 18.9351 23.4535L13.2782 17.7966L18.9351 12.1398C19.3256 11.7493 19.3256 11.1161 18.9351 10.7256C18.5446 10.335 17.9114 10.335 17.5209 10.7256L11.1569 17.0895ZM22.542 16.7966L11.864 16.7966L11.864 18.7966L22.542 18.7966L22.542 16.7966Z" fill="black"/>
                   </svg>
                 </a>
-                <a href="#" class="absolute right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
+                <a href="#" class="absolute z-10 right-4 top-1/2 w-[35px] h-[35px] rounded-full flex items-center justify-center serviceSliderBtnNext">
                   <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35" fill="none">
                     <circle cx="17.5" cy="17.5" r="17.5" fill="white"/>
                     <path d="M23.2493 17.0895C23.6399 17.48 23.6399 18.1132 23.2493 18.5037L16.8854 24.8677C16.4948 25.2582 15.8617 25.2582 15.4712 24.8677C15.0806 24.4772 15.0806 23.844 15.4712 23.4535L21.128 17.7966L15.4712 12.1398C15.0806 11.7493 15.0806 11.1161 15.4712 10.7256C15.8617 10.335 16.4948 10.335 16.8854 10.7256L23.2493 17.0895ZM11.8643 16.7966L22.5422 16.7966L22.5422 18.7966L11.8643 18.7966L11.8643 16.7966Z" fill="black"/>
@@ -683,6 +727,10 @@
 
     <a href="#" class="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-primary hover:bg-secondary transition-colors shadow-lg fixed bottom-4 right-4 z-[100] modal-open">
       <img src="img/icons/phone.svg" alt="" />
+    </a>
+
+    <a href="https://yandex.ru/maps/org/winauto_express/1066362571/reviews/?ll=30.339952%2C59.988545&z=16" class="fixed -bottom-2 left-3 z-[100] hidden xl:block">
+      <img src="img/reviews.png" alt="" />
     </a>
 
     <!--  MODAL -->
