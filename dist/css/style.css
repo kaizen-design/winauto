@@ -1002,6 +1002,10 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(73 168 94 / var(--tw-bg-opacity));
 }
+.bg-gray-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 244 248 / var(--tw-bg-opacity));
+}
 .bg-gray-200{
   --tw-bg-opacity: 1;
   background-color: rgb(211 211 211 / var(--tw-bg-opacity));
@@ -1541,13 +1545,13 @@ html {
 }
 
 .services-grid{
-  margin-bottom: 0.5rem;
-  margin-top: 1.5rem;
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 0.5rem;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1.5rem;
 }
 
 @media (min-width: 640px){
@@ -1571,6 +1575,8 @@ html {
   border-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(227 55 55 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding-right: 1.5rem;
   padding-left: 8rem;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;

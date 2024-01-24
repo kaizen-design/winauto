@@ -35,11 +35,11 @@
 }
 
 .services-grid {
-  @apply grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-2 px-2 mb-2 mt-6;
+  @apply grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-4 gap-2 px-2 pb-2 pt-6;
 }
 
 .services-grid-item {
-  @apply px-6 pl-32 md:pl-40 border-primary-700 border min-h-[166px] sm:min-h-[240px] flex items-center gap-3 md:gap-10 overflow-hidden hover:bg-primary-800 hover:text-white transition-colors;
+  @apply px-6 pl-32 md:pl-40 border-primary-700 bg-white border min-h-[166px] sm:min-h-[240px] flex items-center gap-3 md:gap-10 overflow-hidden hover:bg-primary-800 hover:text-white transition-colors;
 }
 
 .h2 {
