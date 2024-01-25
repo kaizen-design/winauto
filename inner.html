@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Winauto</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  </head>
+  <body class="min-w-[320px] overflow-x-hidden pt-[116px] md:pt-0">
+    <!-- HEADER -->
+    <header class="fixed top-0 left-0 right-0 z-[99] md:static shadow-md">
+      <div class="md:hidden bg-primary py-3 relative z-10">
+        <div class="container flex items-center justify-center gap-3">
+          <img src="img/icons/smartphone.svg" alt="Phone" />
+          <a href="tel:88004564545" class="text-white font-bold text-lg border-b border-b-white border-dotted leading-tight font-inter line-clamp-1">8 800 456 45 45</a>
+        </div>
+      </div>
+      <div class="bg-gray-100 relative z-10">
+        <div class="container flex items-center justify-center py-6 md:pt-8 md:pb-5 relative md:justify-between">
+          <div class="">
+            <a id="mobileMenuToggle" href="#" class="w-[21px] h-[21px] flex items-center justify-center absolute left-4 md:hidden">
+              <img src="img/icons/menu.svg" alt="Menu" />
+            </a>
+            <a href="./">
+              <img src="img/logo.svg" alt="Winauto" class="max-w-[193px] md:max-w-none" />
+            </a>
+          </div>
+          <div class="gap-6 hidden md:flex items-center">
+            <div class="flex-col hidden min-[1180px]:flex">
+              <span class="text-xs text-gray-500 hidden lg:block">Адрес центра:</span>
+              <span class="flex gap-2.5 items-center">
+                <img src="img/icons/location.svg" alt="Phone" />
+                <span class="forn-inter font-medium text-black-900 text-[17px]">г. Санкт-Петербург, Лесной проспект 78</span>
+              </span>
+            </div>
+            <div class="flex flex-col">
+              <span class="text-xs text-gray-500 hidden lg:block">Телефон</span>
+              <span class="flex gap-2.5 items-center">
+                <img src="img/icons/smartphone-red.svg" alt="Phone" />
+                <a href="tel:88004564545" class="text-black-900 font-bold text-lg font-inter hover:text-primary transition-colors">8 800 456 45 45</a>
+              </span>
+            </div>
+            <a href="#" class="header-btn modal-open">
+              Заказать звонок
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- MOBILE NAV -->
+      <nav id="mobileNav" class="md:hidden relative z-[1] hidden">
+        <ul class="bg-white flex flex-col items-center gap-10 py-10 px-4 border-t border-gray-400">
+          <li><a href="./#company" class="mobile-menu-link">О центре</a></li>
+          <li><a href="./#services" class="mobile-menu-link">Услуги</a></li>
+          <li><a href="./#reviews" class="mobile-menu-link">Клиенты</a></li>
+          <li><a href="./#contacts" class="mobile-menu-link">Контакты</a></li>
+        </ul> 
+      </nav>  
+    </header>
+    <!-- MAIN NAV -->
+    <nav class="bg-gray-100 w-full pt-5 sticky top-0 z-[99] shadow-md hidden md:flex">
+      <div class="container">
+        <ul class="flex items-center gap-10">
+          <li><a href="./#company" class="menu-link">О центре</a></li>
+          <li><a href="./#services" class="menu-link">Услуги</a></li>
+          <li><a href="./#reviews" class="menu-link">Клиенты</a></li>
+          <li><a href="./#contacts" class="menu-link">Контакты</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- SPLASH -->
+    <section class="splash">
+      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="165" viewBox="0 0 82 165" fill="none" class="hidden 2xl:block absolute top-0 left-0 z-10">
+        <path d="M0 165L82 0H0V165Z" fill="white"/>
+        <path d="M11 144L74 17H41L11 144Z" fill="#D52C4D"/>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="82" height="165" viewBox="0 0 82 165" fill="none" class="hidden 2xl:block absolute bottom-0 right-0 z-10">
+        <path d="M82 0L0 165H82V0Z" fill="white"/>
+        <path d="M71 21L8 148H41L71 21Z" fill="#D52C4D"/>
+        </svg>
+      <div class="absolute inset-0 z-0">
+        <img src="img/banner.jpg" alt="Продажа авто" class="w-full h-full object-cover" />
+      </div>
+      <div class="container flex flex-col gap-2 md:gap-6 relative z-[2] text-white py-8">
+        <h1 class="text-[38px] tracking-[3.04px] md:text-[56px] xl:text-[68px] italic uppercase font-extrabold md:tracking-[4.48px] xl:tracking-[5.54px] md:p-4 md:pl-2 md:bg-secondary-800 leading-tight self-start">Продажа авто</h1>
+        <span class="text-lg md:text-2xl uppercase font-bold">
+          Выкупим автомобили из европы
+        </span>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section>
+      <div class="container py-11 sm:py-12 lg:py-16 flex flex-col gap-8 sm:gap-12 lg:gap-20">
+        <div class="flex flex-col sm:flex-row gap-4 items-center sm:items-start sm:gap-8">
+          <img src="img/agent.jpg" alt="" class="w-[106px] h-[106px] sm:w-[147px] sm:h-[147px] lg:w-[208px] lg:h-[208px] rounded-full overflow-hidden object-cover" />
+          <div class="text-base sm:text-2xl bg-gradient-to-r from-[#F8EBF0] to-[#F1F6FB] py-5 px-8 leading-snug -skew-x-12 mx-3 relative before:content-[''] before:h-[26px] before:bg-primary before:absolute before:top-0 before:-left-[1rem] before:w-[1rem] z-0 max-w-[512px] sm:py-12 sm:px-16 flex-1 lg:py-14">
+            <p class="skew-x-12">Здравствуйте!<br /> я готов рассчитать стоимость вашего авто!</p>
+          </div>
+        </div>  
+        <div class="flex flex-col gap-11 lg:gap-16">
+          <h2 class="text-2xl font-semibold md:text-[44px]">Этапы для покупки авто</h2>
+          <div class="overflow-y-auto pb-10 xl:pb-0">
+            <ul class="flex flex-nowrap w-fit gap-4">
+              <li class="border border-gray-200 py-5 flex flex-col items-start w-[242px] gap-6 overflow-hidden xl:w-auto flex-1">
+                <span class="bg-primary text-white h-[46px] -skew-x-12 text-[46px] font-black flex leading-[56px] justify-end pr-4 relative -left-1 w-[70px]">1</span>
+                <p class="text-base px-6">Откройте сайт <a href="#" class="text-secondary-500 underline hover:text-primary transition-colors">https://www.mobile.de/</a> <strong class="font-bold">выберите интересующий вас автомобиль</strong></p>
+                <img src="img/step-1.png" alt="" class="-mb-5 w-full object-cover bg-bottom mt-auto" />
+              </li>
+              <li class="border border-gray-200 py-5 flex flex-col items-start w-[242px] gap-6 overflow-hidden xl:w-auto flex-1">
+                <span class="bg-primary text-white h-[46px] -skew-x-12 text-[46px] font-black flex leading-[56px] justify-end pr-4 relative -left-1 w-[70px]">2</span>
+                <p class="text-base px-6"><strong class="font-bold">Уточните стоимость,</strong> она должна быть NETTO (за вычетом немецкого НДС)</p>
+                <img src="img/step-2.png" alt="" class="-mb-5 w-full object-cover bg-bottom mt-auto" />
+              </li>
+              <li class="border border-gray-200 py-5 flex flex-col items-start w-[242px] gap-6 overflow-hidden xl:w-auto flex-1">
+                <span class="bg-primary text-white h-[46px] -skew-x-12 text-[46px] font-black flex leading-[56px] justify-end pr-4 relative -left-1 w-[70px]">3</span>
+                <p class="text-base px-6"><strong class="font-bold">К этой цене прибавьте 10%.</strong> Это будет стоимость вашего автомобиля в Германии.</p>
+                <img src="img/step-3.png" alt="" class="-mb-5 w-full object-cover bg-bottom mt-auto" />
+              </li>
+              <li class="border border-gray-200 py-5 flex flex-col items-start w-[242px] gap-6 overflow-hidden xl:w-auto flex-1">
+                <span class="bg-primary text-white h-[46px] -skew-x-12 text-[46px] font-black flex leading-[56px] justify-end pr-4 relative -left-1 w-[70px]">4</span>
+                <p class="text-base px-6"><strong class="font-bold">Далее к этой цене надо прибавить 10 000 Евро</strong>. Это доставка и растаможка средне кубатурного автомобиля 3-5 лет. До МСк или СПб.</p>
+                <img src="img/step-4.png" alt="" class="-mb-5 w-full object-cover bg-bottom mt-auto" />
+              </li>
+              <li class="border border-gray-200 py-5 flex flex-col items-start w-[242px] gap-6 overflow-hidden xl:w-auto flex-1">
+                <span class="bg-primary text-white h-[46px] -skew-x-12 text-[46px] font-black flex leading-[56px] justify-end pr-4 relative -left-1 w-[70px]">5</span>
+                <p class="text-base px-6"><strong class="font-bold">Далее прибавьте 55 тыс. руб.</strong> Это будет полная стоимость автомобиля у вас дома!!!</p>
+                <img src="img/step-5.png" alt="" class="-mb-5 w-full object-cover bg-bottom mt-auto" />
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col gap-11 xl:-mt-8">
+          <p class="text-base lg:text-2xl">Если авто новое то расчет индивидуален!!</p>
+          <a href="#" class="bg-primary text-white font-extrabold text-lg uppercase italic px-10 py-4  font-inter h-fit hover:bg-secondary transition-colors self-start modal-open">Оставить заявку</a>
+        </div>  
+      </div>
+    </section>
+
+    <!-- CONTACTS -->
+    <section class="contact-section">
+      <div class="container pt-4 sm:pt-12 lg:py-36 relative z-[1]">
+        <div class="grid grid-cols-1 items-center lg:grid-cols-2">
+          <div class="flex flex-col gap-6">
+            <h2 class="h2 sm:mb-4 lg:mb-6">Наши контакты</h2>
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-1">
+              <div class="flex flex-col gap-1 lg:gap-2">
+                <span class="text-xs text-gray-500 sm:text-sm">Телефон центра</span>
+                <span class="flex gap-2.5 items-center">
+                  <img src="img/icons/smartphone-red.svg" alt="Phone" />
+                  <a href="tel:88004564545" class="text-black-900 font-bold text-lg sm:text-2xl lg:text-3xl hover:text-primary transition-colors">8 800 456 45 45</a>
+                </span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2">
+                <span class="text-xs text-gray-500 sm:text-sm">Адрес магазина:</span>
+                <span class="flex gap-2.5 items-start">
+                  <img src="img/icons/location.svg" alt="Phone" class="mt-1 lg:mt-2" />
+                  <span class="font-medium text-black-900 text-base leading-tight lg:text-xl">г. Санкт-Петербург, Лесной проспект 78</span>
+                </span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2">
+                <span class="text-xs text-gray-500 sm:text-sm">Электронный адрес</span>
+                <span class="flex gap-2.5 items-center">
+                  <a href="mailto:manager@winautocenter.ru" class="text-primary font-medium hover:text-secondary text-base lg:text-xl transition-colors">manager@winautocenter.ru</a>
+                </span>
+              </div>
+              <div class="flex flex-col gap-1 lg:gap-2">
+                <span class="text-xs text-gray-500 sm:text-sm">Мы в социальных сетях:</span>
+                <span class="flex gap-2.5 items-center flex-wrap">
+                  <a href="#" class="flex gap-2 items-center bg-white text-xs sm:text-base font-medium py-2 px-3 border-2 border-transparent hover:border-secondary-300 transition-all">
+                    <img src="img/icons/vk.svg" alt="VK" />
+                    Вконтакте
+                  </a>
+                  <a href="#" class="flex gap-2 items-center bg-white text-xs sm:text-base font-medium py-2 px-3 border-2 border-transparent hover:border-secondary-300 transition-all">
+                    <img src="img/icons/whatsapp.svg" alt="Whatsapp" />
+                    Whatsapp
+                  </a>
+                </span>
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+      <div class="hidden lg:block">
+        <img src="img/building.png" alt="" class="absolute right-0 bottom-0" />
+        <a href="#" data-id="tooltip-1" aria-describedby="tooltip-1" class="hotspot right-[535px] bottom-[275px] focus:right-[517px] focus:bottom-[257px] active:right-[517px] active:bottom-[257px]"></a>
+        <div id="tooltip-1" role="tooltip" class="tooltip">
+          <div class="flex flex-col gap-4">
+            <img src="img/service-logo-3.png" alt="" class="max-w-[167px]" />
+            <p class="text-xs">Наша Компания является одним из крупнейших в России продавцов внедорожного оборудования и аксессуаров для внедорожников и ATV.</p>
+            <a href="#" class="text-[11px] text-white bg-primary-700 rounded-full py-1 px-2 self-start hover:bg-secondary">Перейти на Вездеход</a>
+          </div>
+        </div>
+        <a href="#" data-id="tooltip-2" aria-describedby="tooltip-2" class="hotspot right-[485px] bottom-[425px] focus:right-[467px] focus:bottom-[407px] active:right-[467px] active:bottom-[407px]"></a>
+        <div id="tooltip-2" role="tooltip" class="tooltip">
+          <div class="flex flex-col gap-4">
+            <img src="img/service-logo-3.png" alt="" class="max-w-[167px]" />
+            <p class="text-xs">Наша Компания является одним из крупнейших в России продавцов внедорожного оборудования и аксессуаров для внедорожников и ATV.</p>
+            <a href="#" class="text-[11px] text-white bg-primary-700 rounded-full py-1 px-2 self-start hover:bg-secondary">Перейти на Вездеход</a>
+          </div>
+        </div>
+        <a href="#" data-id="tooltip-3" aria-describedby="tooltip-3" class="hotspot right-[350px] bottom-[535px] focus:right-[332px] focus:bottom-[517px] active:right-[332px] active:bottom-[517px]"></a>
+        <div id="tooltip-3" role="tooltip" class="tooltip">
+          <div class="flex flex-col gap-4">
+            <img src="img/service-logo-3.png" alt="" class="max-w-[167px]" />
+            <p class="text-xs">Наша Компания является одним из крупнейших в России продавцов внедорожного оборудования и аксессуаров для внедорожников и ATV.</p>
+            <a href="#" class="text-[11px] text-white bg-primary-700 rounded-full py-1 px-2 self-start hover:bg-secondary">Перейти на Вездеход</a>
+          </div>
+        </div>
+        <a href="#" data-id="tooltip-4" aria-describedby="tooltip-4" class="hotspot right-[165px] bottom-[275px] focus:right-[147px] focus:bottom-[257px] active:right-[147px] active:bottom-[257px]"></a>
+        <div id="tooltip-4" role="tooltip" class="tooltip">
+          <div class="flex flex-col gap-4">
+            <img src="img/service-logo-3.png" alt="" class="max-w-[167px]" />
+            <p class="text-xs">Наша Компания является одним из крупнейших в России продавцов внедорожного оборудования и аксессуаров для внедорожников и ATV.</p>
+            <a href="#" class="text-[11px] text-white bg-primary-700 rounded-full py-1 px-2 self-start hover:bg-secondary">Перейти на Вездеход</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="h-[489px] bg-gray-200">
+      <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A4db9ca6660fb51bf5a8fe1b9fd6fe1281bb7ad26bad6945eb5e49590c63b7330&amp;width=100%25&amp;height=489&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-white-50">
+      <div class="container py-8 flex flex-col lg:pt-[72px]">
+        <div class="hidden sm:flex justify-between pb-8 items-start gap-16 lg:gap-20">
+          <div class="hidden lg:flex flex-col gap-6">
+            <img src="img/logo.svg" alt="Winauto" />
+            <p class="text-sm text-gray-700">@ 2023 winautocenter.ru, Все права защищены</p>
+          </div>
+          <div class="flex gap-16 flex-1">
+            <ul class="flex flex-col gap-6">
+              <li><a href="./#company" class="footer-link">О центре</a></li>
+              <li><a href="./#services" class="footer-link">Услуги</a></li>
+              <li><a href="./#reviews" class="footer-link">Клиенты</a></li>
+              <li><a href="./#contacts" class="footer-link">Контакты</a></li>
+            </ul>
+            <ul class="flex flex-col gap-6">
+              <li><a href="https://winauto-express.ru" class="footer-link">Автосервис</a></li>
+              <li><a href="https://winauto-shop.ru" class="footer-link">Магазин</a></li>
+              <li><a href="https://vezdehod-shop.ru" class="footer-link">Все для оффроуда</a></li>
+              <li><a href="./inner.html" class="footer-link">Продажа авто</a></li>
+            </ul>
+          </div>
+          <div class="flex flex-col gap-6 lg:gap-8 ">
+            <div class="flex flex-col gap-1 lg:gap-2">
+              <span class="text-xs lg:text-sm text-gray-500">Телефон центра</span>
+              <span class="flex gap-2.5 items-center">
+                <img src="img/icons/smartphone-red.svg" alt="Phone" />
+                <a href="tel:88004564545" class="text-black-900 font-bold text-lg lg:text-2xl hover:text-primary transition-colors">8 800 456 45 45</a>
+              </span>
+            </div>
+            <div class="flex flex-col gap-1 lg:gap-2">
+              <span class="text-xs lg:text-sm text-gray-500">Адрес магазина:</span>
+              <span class="flex gap-2.5 items-start">
+                <img src="img/icons/location.svg" alt="Phone" class="mt-1 lg:mt-1.5" />
+                <span class="font-medium text-black-900 text-sm lg:text-xl leading-tight">г. Санкт-Петербург, Лесной проспект 78</span>
+              </span>
+            </div>
+            <div class="flex gap-2.5">
+              <a href="#" class="flex items-center justify-center w-[35px] h-[35px] bg-[#3960EB] hover:opacity-90 transition-opacity">
+                <img src="img/icons/vk-white.svg" alt="VK" />
+              </a>
+              <a href="#" class="flex items-center justify-center w-[35px] h-[35px] bg-[#49A85E] hover:opacity-90 transition-opacity">
+                <img src="img/icons/whatsapp-white.svg" alt="Whatsapp" />
+              </a>
+            </div>
+            <p class="uppercase text-[9px] font-semibold font-inter hidden lg:block">Разработка сайта и дизайн - <a href="#" class="text-primary hover:text-secondary">mihaelk</a></p>
+          </div>
+        </div>
+        <div class="flex flex-col gap-6 items-center sm:flex-row sm:items-start sm:pt-8 sm:border-t sm:border-gray-400 lg:hidden">
+          <img src="img/logo.svg" alt="Winauto" class="max-w-[233px]" />
+          <p class="text-gray-700 text-xs text-center font-inter sm:text-left">@ 2023 winautocenter.ru,<br />Все права защищены</p>
+          <p class="uppercase text-[9px] font-semibold font-inter sm:ml-auto">Разработка сайта и дизайн - <a href="#" class="text-primary hover:text-secondary transition-colors">mihaelk</a></p>
+        </div>  
+      </div>
+    </footer>
+
+    <a href="#" class="flex items-center justify-center w-[60px] h-[60px] rounded-full bg-primary hover:bg-secondary transition-colors shadow-lg fixed bottom-4 right-4 z-[100] modal-open">
+      <img src="img/icons/phone.svg" alt="" />
+    </a>
+
+    <a href="https://yandex.ru/maps/org/winauto_express/1066362571/reviews/?ll=30.339952%2C59.988545&z=16" class="fixed -bottom-2 left-3 z-[100] hidden xl:block">
+      <img src="img/reviews.png" alt="" />
+    </a>
+
+    <!--  MODAL -->
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 bottom-0 right-0 flex items-center justify-center z-[100]">
+      <div class="modal-overlay absolute w-full h-full inset-0 bg-secondary opacity-80"></div>
+      
+      <div class="modal-container bg-white w-11/12 md:max-w-[900px] mx-auto shadow-lg z-50 overflow-y-auto my-6">
+       
+        <div class="modal-content px-5 py-8 md:p-16 text-left relative md:bg-[url('../img/modal-bg.png')] bg-left-top bg-no-repeat">
+
+          <div class="modal-close cursor-pointer z-50 absolute top-0 right-0 w-[45px] h-[45px] bg-secondary hover:bg-primary transition-colors flex items-center justify-center group">
+            <img src="img/icons/modal-close.svg" alt="" class="group-hover:rotate-180 transition-all" />
+          </div>
+
+          <div class="form-fieldset grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-28 xl:gap-32">
+            <div class="flex flex-col gap-2 md:gap-4 md:mt-40">
+              <h3 class="text-[28px] font-semibold">Заказать звонок</h3>
+              <p class="text-sm text-gray-700">И наши менеджеры помогут вам</p>
+            </div>
+            <form class="callback-form flex flex-col gap-5">
+              <input type="text" name="name" placeholder="Ваше имя" class="form-control" />
+              <input type="text" name="phone" placeholder="Телефон" class="form-control" />
+              <label class="inline-flex items-center">
+                <input type="checkbox" class="text-secondary focus:ring-secondary border-gray-300">
+                <span class="ml-3 text-xs text-gray-700 leading-tight">Я согласен с <a href="#" class="text-primary border-b border-primary hover:text-secondary hover:border-secondary">правилами обработки</a> личных данных</span>
+              </label>
+              <button type="submit" class="text-lg italic uppercase font-inter text-white font-bold bg-primary hover:bg-secondary transition-colors p-4 flex items-center justify-center tracking-[0.36px] disabled:opacity-70">Отправить</button>
+            </form>
+          </div>
+
+          <div class="result-fieldset flex flex-col justify-center items-center gap-5 mx-auto max-w-[414px] text-center hidden">
+            <h3 class="text-[28px] font-semibold leading-tight">Спасибо,<br />что выбрали Winautocenter</h3>
+            <p class="text-lg text-gray-500 max-w-[309px] mx-auto">Наши менеджеры скоро свяжутся с вами для обсуждения деталей</p>
+            <a href="#" class="modal-close text-lg font-bold text-white italic uppercase tracking-[0.36px] font-inter bg-primary py-2 px-12 hover:bg-secondary transition-colors">На главную</a>
+            <img src="img/icons/checkmark.svg" alt="" class="hidden lg:block absolute right-0 bottom-0" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+    <script src="https://unpkg.com/@popperjs/core@2" charset="utf-8"></script>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
